@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:context=".Channel_Fragmet_Page">
+
+    <item
+        android:id="@+id/channel_add_menu"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/title_home"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+    
+
+
+
+</menu>

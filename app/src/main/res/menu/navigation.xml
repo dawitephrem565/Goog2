@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/community"
+        android:icon="@drawable/comm"
+        android:title="Community"
+      />
+
+    <item
+        android:id="@+id/celebrity"
+        android:icon="@drawable/celebrityy"
+        android:title="User"
+        android:titleCondensed="@string/app_name"
+        />
+
+    <item
+        android:id="@+id/news_provider"
+        android:icon="@drawable/news_24dp"
+        android:title="News Paper"
+        android:iconTintMode="screen"
+        />
+
+    <item
+        android:id="@+id/tv_entertament"
+        android:icon="@drawable/enter"
+        android:title="TV"
+        />
+
+
+</menu>

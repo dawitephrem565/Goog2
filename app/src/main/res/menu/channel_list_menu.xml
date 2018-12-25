@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Channel_Fragmet_Page">
+
+    <item
+        android:id="@+id/create_channel_btn"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/title_home"
+        android:visible="true"
+        app:actionViewClass="android:support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        />
+
+
+
+
+</menu>
