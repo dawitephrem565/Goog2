@@ -8,4 +8,8 @@
     <string name="title_activity_bottomnavigation">bottomnavigation</string>
     <string name="share_what_you_like">share what is new</string>
     <string name="this_image_refer_to_user_to_post_there_images">this image refer to user to post there images</string>
+    <string name="selected_channel_image">selected channel image</string>
+    <string name="community_name">Community_name</string>
+    <string name="unique_name_of_community">unique_name_of_community hint in edit text</string>
+    <string name="create_community">Create Community</string>
 </resources>

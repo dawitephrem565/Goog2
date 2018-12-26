@@ -9,22 +9,34 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/selected_channel_image"
         android:id="@+id/bg"
         android:src="@drawable/imagebg"
         />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <!--<de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="24dp"
         android:layout_marginLeft="84dp"
+        android:visibility="gone"
         android:id="@+id/community_profile_Image"
         android:layout_marginTop="60dp"
         android:src="@drawable/profilepic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="24dp" />
+        android:layout_marginRight="24dp" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="228dp"
+        android:src="@drawable/ic_camera_enhance_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="44dp" />
 
     <android.support.design.widget.TextInputEditText
         android:layout_width="match_parent"
@@ -32,9 +44,11 @@
         android:layout_marginLeft="16dp"
         android:id="@+id/communityname"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="20dp"
-        android:hint="Community_name"
-        android:textSize="16dp"
+        android:hint="@string/community_name"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bg" />
@@ -43,10 +57,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="20dp"
         android:id="@+id/uniquenameofcommunity"
-        android:hint="Unique_Name_of_Community"
-        android:textSize="16dp"
+        android:hint="@string/unique_name_of_community"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/communityname" />
@@ -55,13 +71,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/create_community_btn"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/login_btn_style"
-        android:text="Create Community"
+        android:text="@string/create_community"
         android:onClick="createcommunity"
       android:textColor="#fff"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uniquenameofcommunity"
