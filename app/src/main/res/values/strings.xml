@@ -10,6 +10,13 @@
     <string name="this_image_refer_to_user_to_post_there_images">this image refer to user to post there images</string>
     <string name="selected_channel_image">selected channel image</string>
     <string name="community_name">Community_name</string>
-    <string name="unique_name_of_community">unique_name_of_community hint in edit text</string>
+    <string name="unique_name_of_community">Special Name</string>
     <string name="create_community">Create Community</string>
+    <string name="profile_setting">Profile Setting</string>
+    <string name="logout">Logout</string>
+    <string name="username_hint_in_user_profile_page">Username</string>
+    <string name="user_phone_number_hint_user_profile_page">09*******</string>
+    <string name="bio_user_profile_page">Bio</string>
+    <string name="user_profile_image_display">user_profile_image_display</string>
+    <string name="update_btn_user_profile_page">Update</string>
 </resources>

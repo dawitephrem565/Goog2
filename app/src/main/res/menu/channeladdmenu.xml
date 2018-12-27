@@ -9,12 +9,22 @@
         android:icon="@drawable/ic_add_black_24dp"
         android:title="@string/title_home"
         android:orderInCategory="100"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:visible="true"
         />
 
-    
-
+    <item
+        android:id="@+id/profilesetting"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="@string/profile_setting"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/logoutbtn"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="@string/logout"
+        app:showAsAction="never"
+        />
 
 
 </menu>

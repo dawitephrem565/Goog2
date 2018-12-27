@@ -44,9 +44,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by filenber on 05/12/2018.
- */
+
 
 public class CommunityFramePage extends Fragment implements View.OnClickListener {
     View view;
@@ -58,13 +56,13 @@ public class CommunityFramePage extends Fragment implements View.OnClickListener
     private static final String URL_PRODUCTS = "http://192.168.137.1/gogo/post.php";
 
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.communityrecycleview,container,false);
-        communityRecycleview = (RecyclerView)view.findViewById(R.id.communityrecyleview);
 
-        postbtn = (FloatingActionButton)view.findViewById(R.id.communityfab);
+    @Override
+    public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.communityrecycleview,container,false);
+        communityRecycleview = view.findViewById(R.id.communityrecyleview);
+
+        postbtn = view.findViewById(R.id.communityfab);
         postbtn.setOnClickListener(this);
         community_page_adapter = new Community_page_adapter(getActivity(),community_page_iteams);
         communityRecycleview.setAdapter(community_page_adapter);
@@ -165,7 +163,7 @@ public class CommunityFramePage extends Fragment implements View.OnClickListener
                     cacheEntry.responseHeaders = response.headers;
                     final String jsonString = new String(response.data,
                             HttpHeaderParser.parseCharset(response.headers));
-                    return Response.success(new String(jsonString), cacheEntry);
+                    return Response.success((jsonString), cacheEntry);
                 } catch (UnsupportedEncodingException e) {
                     return Response.error(new ParseError(e));
                 }
@@ -185,7 +183,7 @@ public class CommunityFramePage extends Fragment implements View.OnClickListener
         };
 
         //adding our stringrequest to queue
-        Volley.newRequestQueue(getActivity().getApplicationContext()).add(stringRequest);
+        Volley.newRequestQueue(getActivity().getBaseContext()).add(stringRequest);
     }
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -202,7 +200,16 @@ public class CommunityFramePage extends Fragment implements View.OnClickListener
           Intent intent = new Intent(getContext(),Channel_Fragmet_Page.class);
           startActivity(intent);
         }
-
+        else if(itemId==R.id.profilesetting)
+        {
+            Intent intent = new Intent(getContext(),ProfilePage.class);
+            startActivity(intent);
+        }
+ else if(itemId==R.id.logoutbtn)
+        {
+            Intent intent = new Intent(CommunityFramePage.this.context,Login_activity.class);
+            startActivity(intent);
+        }
 
 
         return super.onOptionsItemSelected(item);
