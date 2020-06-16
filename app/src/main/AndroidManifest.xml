@@ -3,9 +3,11 @@
     package="com.example.filenber.goog">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -25,15 +27,16 @@
             android:name=".bottomnavigation"
             android:label="@string/app_name"
             android:theme="@style/Actionbar" />
-        <activity android:name=".CreateChannel"
-            android:theme="@style/Actionbar"
-            />
-        <activity android:name=".Channel_Fragmet_Page"
-            android:theme="@style/Actionbar"
-            />
-        <activity android:name=".PostIdea"
-            android:theme="@style/Actionbar"
-            ></activity>
+        <activity
+            android:name=".CreateChannel"
+            android:theme="@style/Actionbar" />
+        <activity
+            android:name=".Channel_Fragmet_Page"
+            android:theme="@style/Actionbar" />
+        <activity
+            android:name=".PostIdea"
+            android:theme="@style/Actionbar" />
+        <activity android:name=".ProfilePage"></activity>
     </application>
 
 </manifest>
